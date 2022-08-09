@@ -1,0 +1,118 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~leaflet/dist/leaflet.css";
+
+.pulse {
+  -moz-transition: transform 2s ease-in-out 0s;
+  -webkit-transition: transform 2s ease-in-out 0s;
+  -o-transition: transform 2s ease-in-out 0s;
+ 
+  transform: scale(1);
+  
+  animation: pulsate 1s ease-out;
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite; 
+  opacity: 0.8
+}
+
+
+@keyframes pulsate {
+  0% {transform: opacity 0.8;}
+  50% {opacity: 1.0;}
+  100% {transform: opacity 0.8;}
+}
+
+.leaflet-container path{ 
+  transition: fill .75s;
+}
+
+html,
+body,
+app-root,
+app-body {
+  min-width: 100%;
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.esri-legend__message {
+  display: none;
+}
+
+.mat-typography h1 {
+  font-size: 2rem !important;
+  margin: 0 0 0.5em;
+}
+.mat-body, .mat-body-1, .mat-typography, .leaflet-container, .leaflet-popup-content {
+  font-size: 1rem !important;
+}
+
+.leaflet-popup-content {
+  margin: 1em 1em;
+}
+
+.mat-dialog-container {
+  padding: 1em !important;
+}
+
+.info {
+  padding: 6px 8px;
+  font: 1rem Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+.legend {
+  line-height: 1rem;
+  color: #555;
+}
+
+.legend i {
+  width: 1rem;
+  height: 1rem;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 700px) {
+  .mat-column-confirmados,
+  .mat-column-mortes,
+  .mat-column-recuperados,
+  .mat-paginator-range-label {
+    display: none !important;
+  }
+
+  table,
+  .mat-paginator {
+    font-size: 10px !important;
+  }
+
+  .mat-cell,
+  tr,
+  button,
+  .mat-header-cell {
+    font-size: 1em !important;
+  }
+  html {
+    font-size: 10px;
+  }
+}
+
+.middle {
+  z-index: 1200;
+  position: absolute;
+  margin-top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.middle .mat-form-field-flex {
+  background-color: white;
+}

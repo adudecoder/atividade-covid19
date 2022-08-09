@@ -1,0 +1,35 @@
+.info {
+  font-size: 1rem;
+}
+
+.sidenav-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav {
+  padding: 20px;
+}
+
+.map-frame {
+  height: 100%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+#map,
+.sidenav-content {
+  height: 100%;
+  width: 100%;
+}
+
+mat-drawer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

@@ -1,0 +1,32 @@
+{
+    "warning": {
+      "title": "Important",
+      "content": "<p>The data available here are frequently updated.</p>\n\n<p><a href='https://brasil.io/home' target='__blank'>Brasil.IO</a>, this app's data source reminds you that:</p>\n<ul>\n<li>\nThe state numbers can be different from city ones for two reasons:\n<ul>\n<li>\nState healthcare department stopped disclosing data by city and are\nonly disclosing data by state (this is happening in SP);\n</li>\n<li>State healthcare department disclosed wrong numbers (this sometimes happens).</li>\n</ul>\n</li>\n\n<li>\nOur data will not always match Ministry of Health because it may be that\nour collection has been done after the Ministry collection. We have the most recent data.\n</li>\n</ul><p>Special thanks to:</p><p>Craig Shaw for helping with the translation</p><p><a href='https://github.com/asaadsaad' target='_blank'>Asaad Saad</a> for his MWA Course</p><p><a href='https://github.com/YousefAliQ' target='_blank'>Yousef Quran</a> for his contributions on how shapefiles and GeoJSON work.</p>",
+      "okay": "OK"
+    },
+    "map": {
+      "date": "Date",
+      "maplabel": "Map Mode",
+      "citytotal": "City / Accumulated",
+      "statetotal": "State / Accumulated",
+      "citydaily": "City / Daily",
+      "statedaily": "State / Daily",
+      "citytotalper100k": "City / 100k population",
+      "statetotalper100k": "State / 100k population",
+      "title": "Monitor COVID-19 - ",
+      "aftertitle": "Confirmed: {{ totalConfirmed }} Deaths:\n<b style='color: red'>{{ totalDeath }}</b> ",
+      "lastUpdated": "Last Updated: {{ ultimaAtualizacao$ }}", 
+      "info": "Source:\n<a href='https://github.com/turicas/covid19-br'\n>State Health Secretariats, data <br/>handled by \nÁlvaro Justen/Brasil.IO</a\n><br />\nCoded by\n<a href='https://github.com/endoedgar'>Edgar Endo Junior</a>",
+      "tooltip": "<h2>{{ regionName }}</h2>\nConfirmed: {{ regionConfirmed }}<br/>\nDeaths: {{ regionDeaths }} <br/>\nLast Updated: <b style='color: red'>{{ lastUpdate }}</b>",
+      "dataLoaded": "Data Loaded! (Last Updated: {{ lastUpdate }})",
+      "selectState": "Select a state:",
+      "brazil": "Brazil"
+    },
+    "regionlist": {
+      "name": "Name",
+      "confirmed": "Confirmed",
+      "deaths": "Deaths",
+      "search": "Search"
+    }
+  }
+  
