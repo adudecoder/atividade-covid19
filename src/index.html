@@ -1,44 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-16429183-3"
-    ></script>
+<!--
+
+=========================================================
+* Material Dashboard Angular - v2.4.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard-angular2
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-angular2/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!doctype html>
+<html>
+<head>
+    <base href='/'>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="https://raw.githubusercontent.com/inf-covid19/tools/master/public/favicon.ico" />
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/inf-covid19/tools/master/public/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>COVID-19 no Brasil</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <!--     Fonts and icons     -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR-KEY-HERE"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162528177-2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-      gtag("config", "UA-16429183-3");
+      gtag('config', 'UA-162528177-2');
     </script>
 
-    <meta charset="utf-8" />
-    <title>Mapa COVID 19 no Brasil - Fonte: Brasil.IO</title>
-    <base href="/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <meta property="og:title" content="Mapa COVID 19 no Brasil - Fonte: Brasil.IO" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta property="og:url" content="https://endoedgar.github.io/covid19-monitorbr/" />
-    <meta property="og:image" content="https://endoedgar.github.io/covid19-monitorbr/assets/data/screenshot.png" />
-    <meta property="og:description" content="Projeto que monitora via mapa interativo a evolução diária da COVID-19 em cada município brasileiro utilizando a API disponibilizada pelo Brasil.IO." />
-    <meta property="og:type" content="website" />
-    <meta property="fb:app_id" content="626027021292418" />
+</head>
+<body>
+  <app-root>
+    <div class="loader">
+      <svg class="circular" viewBox="25 25 50 50">
+          <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+      </svg>
+    </div>
+  </app-root>
+</body>
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="mat-typography">
-    <app-root></app-root>
-  </body>
+
 </html>

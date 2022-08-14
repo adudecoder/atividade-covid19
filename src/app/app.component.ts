@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import {TranslateService} from '@ngx-translate/core';
-import moment from "moment-timezone"
+import { Component} from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -8,10 +7,5 @@ import moment from "moment-timezone"
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'covid19brasilmap';
 
-  constructor(private translate: TranslateService) {
-    translate.setDefaultLang(navigator.language.match(/^pt/) ? "pt-BR" : 'en');
-    moment.locale(navigator.language);
-  }
 }
