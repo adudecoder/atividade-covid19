@@ -828,7 +828,7 @@ export class MapchartComponent implements OnInit, AfterViewInit, OnDestroy {
           }
 
           return (
-            '<div style="opacity:0.8;background-color:#253494;padding:7px;color:white">' +
+            '<div style="opacity:0.8;background-color:#00c434;padding:7px;color:white">' +
             '<text>Estado: </text><text style="font-weight: 800">' +
             d.properties.NOME_UF +
             '</text><br/>' +
@@ -1173,7 +1173,7 @@ export class MapchartComponent implements OnInit, AfterViewInit, OnDestroy {
 
     self.tipCounty = d3Tip();
     self.tipCounty
-      .attr('class', 'd3-tip')
+      .attr('class', 'd3-tip mat-elevation-z8')
       .html(function(d) {
         d3.select(this).attr('stroke', self.lineStrongerBorderColor);
         d3.select(this).attr('stroke-width', 3);
@@ -1182,7 +1182,7 @@ export class MapchartComponent implements OnInit, AfterViewInit, OnDestroy {
         const labelTotDeath = byDensity === true ? 'Incidência óbitos' : 'Total óbitos';
         return (
           // '<div style="opacity:0.8;background-color:#8b0707;padding:7px;color:white">' +
-          '<div style="opacity:0.8;background-color:#253494;padding:7px;color:white">' +
+          '<div style="opacity:0.8;background-color:#00c434;padding:7px;color:white">' +
           '<text>Município: </text><text style="font-weight: 800">' +
           d.properties.NOME_MUNI +
           '</text><br/>' +
@@ -1675,7 +1675,7 @@ export class MapchartComponent implements OnInit, AfterViewInit, OnDestroy {
           if (self.byWeek === true) date.setDate(d.date.getDate() + 6);
           return (
               // '<div style="opacity:0.8;background-color:#8b0707;padding:7px;color:white">' +
-              '<div style="opacity:0.8;background-color:#253494;padding:7px;color:white">' +
+              '<div style="opacity:0.8;background-color:#00c434;padding:7px;color:white">' +
               '<text style="font-weight: 800">' +
               self.statesNames[d.region] +
               '</text></br><text>' +
@@ -2106,7 +2106,7 @@ export class MapchartComponent implements OnInit, AfterViewInit, OnDestroy {
           if (self.byWeek === true) date.setDate(d.date.getDate() + 6);
           return (
               // '<div style="opacity:0.8;background-color:#8b0707;padding:7px;color:white">' +
-              '<div style="opacity:0.8;background-color:#253494;padding:7px;color:white">' +
+              '<div style="opacity:0.8;background-color:#00c434;padding:7px;color:white">' +
               '<text style="font-weight: 800">' +
               self.countiesNames[d.region] +
               '</text></br><text>' +
@@ -2124,7 +2124,7 @@ export class MapchartComponent implements OnInit, AfterViewInit, OnDestroy {
         .html(function(d) {
           return (
               // '<div style="opacity:0.8;background-color:#8b0707;padding:7px;color:white">' +
-              '<div style="opacity:0.8;background-color:#253494;padding:7px;color:white">' +
+              '<div style="opacity:0.8;background-color:#00c434;padding:7px;color:white">' +
               '<text style="font-weight: 800">' +
               self.countiesNames[d] +
               '</text>' +
