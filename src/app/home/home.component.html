@@ -1,0 +1,57 @@
+<div class="header-bar">
+  <section>
+    <h4>Covid 19 Brasil</h4>
+  </section>
+  <!-- <section>
+    <select [(ngModel)]="selectDate" (change)="filterDateCovid(selectDate)">
+      <option *ngFor="let data of datas" [value]="data">{{ data }}</option>
+    </select>
+  </section> -->
+</div>
+
+<div class="container-main">
+
+  <ng-template [ngIf]="!ChargeMap">
+    <div class="loading">
+      <img
+        src="../../../assets/imgs/loading.png"
+        alt="Carregando data..."
+      />
+      <br />
+      <p>Carregando dados...</p>
+    </div>
+  </ng-template>
+  <ng-template [ngIf]="ChargeMap">
+    <div class="flex-row-chart">
+      <app-map [dataCovid]="dataCovidStatesPerDate"></app-map>
+      <app-pie-chart-obito-recuperados
+        [dataCovid]="dataCovidStatesPerDate"
+      ></app-pie-chart-obito-recuperados>
+    </div>
+    <app-list-states [dataCovid]="dataCovidStatesPerDate"></app-list-states>
+    <div class="container-artigo">
+      <div class="content">
+        <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/03/covid-quarentena-estados-brasil-capa-01-820x430.jpg" alt="imagem do mapa do Brasil">
+        <h4>Recursos físicos e humanos da rede assistencial de saúde</h4>
+        <p>Distribuição de recursos físicos e humanos da rede assistencial de saúde, conforme o CNES, em dezembro de 2019. As informações estão agregadas por município, região de saúde ou UF e associadas ao número de casos confirmados de COVID-19.</p>
+      </div>
+    </div>
+    <!-- <app-list-cities [dataCovid]="dataCovidCities"></app-list-cities> -->
+  </ng-template>
+
+</div>
+
+
+
+
+<!-- <div class="footer-bar">
+  <img
+    src="https://www.pitang.com/image/layout_set_logo?img_id=64051&t=1648734708816"
+    alt=""
+  />
+  <img
+    src="https://raw.githubusercontent.com/ViniciusSoares-Developer/product-buy-angular/main/src/assets/logoETE.png"
+    alt=""
+  />
+  <img src="https://agil.facepe.br/imagens/logo_facepe.png" alt="" />
+</div> -->

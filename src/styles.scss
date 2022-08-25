@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1{
+  font-size: 5rem!important;
+}
+h2{
+  font-size: 4rem!important;
+}
+h3{
+  font-size: 3rem!important;
+}
+h4{
+  font-size: 2rem!important;
+}
+h5{
+  font-size: 1rem!important;
+}
+
+.table-container {
+  max-height: 200px;
+  overflow: auto;
+  table {
+    width: 100%;
+    text-align: center;
+    .sticky {
+      position: sticky;
+      left: 0;
+    }
+  }
+  thead {
+    position: sticky;
+    top: 0;
+    color: white;
+    z-index: 1;
+    tr, th {
+      padding: 1rem;
+      background-color: blue;
+    }
+  }
+  tbody {
+    z-index: inherit;
+    tr, td {
+      padding: .5rem;
+      background-color: white;
+    }
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
