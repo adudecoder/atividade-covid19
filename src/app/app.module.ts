@@ -9,11 +9,13 @@ import { HomeComponent } from './home/home.component';
 import { HomeModule } from './home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import { NavBarComponent } from './home/components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     AppComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,

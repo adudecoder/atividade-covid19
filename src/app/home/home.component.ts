@@ -10,6 +10,7 @@ import { CovidStatesService } from 'src/app/services/covidStates/covidStates.ser
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+
   public dataCovidStates: Array<ICovidState> = [];
   public dataCovidStatesPerDate: Array<ICovidState> = [];
   public dataCovidCities: Array<ICovidCities> = [];

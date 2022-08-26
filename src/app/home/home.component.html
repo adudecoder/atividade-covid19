@@ -1,13 +1,16 @@
-<div class="header-bar">
+<!-- <div class="header-bar">
   <section>
     <h4>Covid 19 Brasil</h4>
   </section>
-  <!-- <section>
-    <select [(ngModel)]="selectDate" (change)="filterDateCovid(selectDate)">
-      <option *ngFor="let data of datas" [value]="data">{{ data }}</option>
-    </select>
-  </section> -->
-</div>
+  <div class="navBar">
+    <ul>
+      <li> <a href="">Pitang</a> </li>
+      <li> <a href="">ETE José Joaquim</a> </li>
+      <li> <a href="">Facepe</a> </li>
+    </ul>
+  </div>
+</div> -->
+<app-nav-bar></app-nav-bar>
 
 <div class="container-main">
 
@@ -28,30 +31,71 @@
         [dataCovid]="dataCovidStatesPerDate"
       ></app-pie-chart-obito-recuperados>
     </div>
-    <app-list-states [dataCovid]="dataCovidStatesPerDate"></app-list-states>
-    <div class="container-artigo">
-      <div class="content">
-        <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/03/covid-quarentena-estados-brasil-capa-01-820x430.jpg" alt="imagem do mapa do Brasil">
-        <h4>Recursos físicos e humanos da rede assistencial de saúde</h4>
-        <p>Distribuição de recursos físicos e humanos da rede assistencial de saúde, conforme o CNES, em dezembro de 2019. As informações estão agregadas por município, região de saúde ou UF e associadas ao número de casos confirmados de COVID-19.</p>
+      <app-list-states [dataCovid]="dataCovidStatesPerDate"></app-list-states>
+      <div class="container-article">
+        <div class="content">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title style="color: #1E90FF;">Recursos físicos e humanos da rede assistencial de saúde</mat-card-title>
+              <mat-card-subtitle style="color: #A9A9A9;">Fonte: IBGE</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/03/covid-quarentena-estados-brasil-capa-01-820x430.jpg" alt="imagem do mapa do Brasil">
+            <mat-card-content>
+              <p>
+                Distribuição de recursos físicos e humanos da rede assistencial de saúde, conforme o CNES, em dezembro de 2019. As informações estão agregadas por município, região de saúde ou UF e associadas ao número de casos confirmados de COVID-19.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button> <a href="https://dadosgeociencias.ibge.gov.br/portal/apps/sites/#/saude">Ler artigo</a> </button>
+              <!-- <button mat-button>SHARE</button> -->
+            </mat-card-actions>
+          </mat-card>
+
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title style="color: #1E90FF;">Recursos físicos e humanos da rede assistencial de saúde</mat-card-title>
+              <mat-card-subtitle style="color: #A9A9A9;">Fonte: IBGE</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/03/covid-quarentena-estados-brasil-capa-01-820x430.jpg" alt="imagem do mapa do Brasil">
+            <mat-card-content>
+              <p>
+                Distribuição de recursos físicos e humanos da rede assistencial de saúde, conforme o CNES, em dezembro de 2019. As informações estão agregadas por município, região de saúde ou UF e associadas ao número de casos confirmados de COVID-19.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button> <a href="https://dadosgeociencias.ibge.gov.br/portal/apps/sites/#/saude">Ler artigo</a> </button>
+              <!-- <button mat-button>SHARE</button> -->
+            </mat-card-actions>
+          </mat-card>
+
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title style="color: #1E90FF;">Recursos físicos e humanos da rede assistencial de saúde</mat-card-title>
+              <mat-card-subtitle style="color: #A9A9A9;">Fonte: IBGE</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/03/covid-quarentena-estados-brasil-capa-01-820x430.jpg" alt="imagem do mapa do Brasil">
+            <mat-card-content>
+              <p>
+                Distribuição de recursos físicos e humanos da rede assistencial de saúde, conforme o CNES, em dezembro de 2019. As informações estão agregadas por município, região de saúde ou UF e associadas ao número de casos confirmados de COVID-19.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button> <a href="https://dadosgeociencias.ibge.gov.br/portal/apps/sites/#/saude">Ler artigo</a> </button>
+              <!-- <button mat-button>SHARE</button> -->
+            </mat-card-actions>
+          </mat-card>
+
+        </div>
       </div>
-    </div>
     <!-- <app-list-cities [dataCovid]="dataCovidCities"></app-list-cities> -->
   </ng-template>
 
 </div>
 
+<div class="footer-bar mat-elevation-z8">
+  <a href="https://www.pitang.com"> <img src="https://www.pitang.com/image/layout_set_logo?img_id=64051&t=1648734708816" alt=""> </a>
 
+  <a href="https://www.educamaisbrasil.com.br/escolas/escola-tecnica-estadual-jose-joaquim-da-silva-filho"> <img src="https://raw.githubusercontent.com/ViniciusSoares-Developer/product-buy-angular/main/src/assets/logoETE.png" alt=""> </a>
 
-
-<!-- <div class="footer-bar">
-  <img
-    src="https://www.pitang.com/image/layout_set_logo?img_id=64051&t=1648734708816"
-    alt=""
-  />
-  <img
-    src="https://raw.githubusercontent.com/ViniciusSoares-Developer/product-buy-angular/main/src/assets/logoETE.png"
-    alt=""
-  />
-  <img src="https://agil.facepe.br/imagens/logo_facepe.png" alt="" />
-</div> -->
+  <a href="https://www.facepe.br"> <img src="https://agil.facepe.br/imagens/logo_facepe.png" alt=""> </a>
+</div>

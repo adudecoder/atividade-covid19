@@ -1,0 +1,44 @@
+* {
+  text-decoration: none;
+}
+
+$red: #FF4500;
+$blue: #191970;
+$black : #000;
+$white : #fff;
+$light-white: #aaa;
+$light-bg: #111;
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1.5rem;
+}
+
+.modal {
+  width: 300px;
+
+  .modal-content {
+    width: 300px;
+
+    .btn-close:hover {
+      background-color: $red;
+    }
+
+    .list-group-item a {
+      color: black;
+    }
+
+    .list-group-item a:hover {
+      color: $white;
+    }
+
+    .list-group-item:hover {
+      background-color: $light-white;
+    }
+
+    .btn:hover {
+      background-color: $red;
+    }
+  }
+}
