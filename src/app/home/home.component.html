@@ -20,33 +20,50 @@
         src="../../../assets/imgs/loading.png"
         alt="Carregando data..."
       />
-      <br />
+      <br /> <br />
       <p>Carregando dados...</p>
     </div>
   </ng-template>
   <ng-template [ngIf]="ChargeMap">
     <div class="flex-row-chart">
       <app-map [dataCovid]="dataCovidStatesPerDate"></app-map>
-      <app-pie-chart-obito-recuperados
-        [dataCovid]="dataCovidStatesPerDate"
-      ></app-pie-chart-obito-recuperados>
+      <app-pie-chart-obito-recuperados [data]="dataCovidStatesPerDate"></app-pie-chart-obito-recuperados>
     </div>
+    <app-list-cities></app-list-cities>
       <app-list-states [dataCovid]="dataCovidStatesPerDate"></app-list-states>
       <div class="container-article">
+        <h4>Notícias</h4>
         <div class="content">
           <mat-card class="example-card">
             <mat-card-header>
               <mat-card-title style="color: #1E90FF;">Recursos físicos e humanos da rede assistencial de saúde</mat-card-title>
               <mat-card-subtitle style="color: #A9A9A9;">Fonte: IBGE</mat-card-subtitle>
             </mat-card-header>
-            <img mat-card-image src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/03/covid-quarentena-estados-brasil-capa-01-820x430.jpg" alt="imagem do mapa do Brasil">
+            <img mat-card-image src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/03/covid-quarentena-estados-brasil-capa-01-820x430.jpg" target="_blank" alt="imagem do mapa do Brasil">
             <mat-card-content>
               <p>
                 Distribuição de recursos físicos e humanos da rede assistencial de saúde, conforme o CNES, em dezembro de 2019. As informações estão agregadas por município, região de saúde ou UF e associadas ao número de casos confirmados de COVID-19.
               </p>
             </mat-card-content>
             <mat-card-actions>
-              <button mat-button> <a href="https://dadosgeociencias.ibge.gov.br/portal/apps/sites/#/saude">Ler artigo</a> </button>
+              <button mat-button style="background: transparent;"> <a href="https://dadosgeociencias.ibge.gov.br/portal/apps/sites/#/saude" target="_blank">Ler artigo</a> </button>
+              <!-- <button mat-button>SHARE</button> -->
+            </mat-card-actions>
+          </mat-card>
+
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title style="color: #1E90FF;">Como se proteger da Covid-19</mat-card-title>
+              <mat-card-subtitle style="color: #A9A9A9;">Fonte: GOV.BR Ministério da Saúde</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://s2.glbimg.com/LyR8sVGbfybKabaycA4LW4sxeSc=/0x0:1440x900/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/Y/Y/8leH3NQWOsBO8MuYEFpg/dicas-para-pais-e-maes-sobre-coronavirus.jpg" alt="Como se previnir da Covid-19">
+            <mat-card-content>
+              <p>
+                Diante da emergência ocasionada pelo coronavírus SARS-CoV-2, o reconhecimento da pandemia pela OMS e a declaração de Emergência de Saúde Pública de Importância Nacional (ESPIN), o Ministério da Saúde tem estabelecido sistematicamente medidas para resposta e enfrentamento da covid-19.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button style="background: transparent;"> <a href="https://www.gov.br/saude/pt-br/coronavirus/como-se-proteger" target="_blank">Ler artigo</a> </button>
               <!-- <button mat-button>SHARE</button> -->
             </mat-card-actions>
           </mat-card>
@@ -63,24 +80,7 @@
               </p>
             </mat-card-content>
             <mat-card-actions>
-              <button mat-button> <a href="https://dadosgeociencias.ibge.gov.br/portal/apps/sites/#/saude">Ler artigo</a> </button>
-              <!-- <button mat-button>SHARE</button> -->
-            </mat-card-actions>
-          </mat-card>
-
-          <mat-card class="example-card">
-            <mat-card-header>
-              <mat-card-title style="color: #1E90FF;">Recursos físicos e humanos da rede assistencial de saúde</mat-card-title>
-              <mat-card-subtitle style="color: #A9A9A9;">Fonte: IBGE</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/03/covid-quarentena-estados-brasil-capa-01-820x430.jpg" alt="imagem do mapa do Brasil">
-            <mat-card-content>
-              <p>
-                Distribuição de recursos físicos e humanos da rede assistencial de saúde, conforme o CNES, em dezembro de 2019. As informações estão agregadas por município, região de saúde ou UF e associadas ao número de casos confirmados de COVID-19.
-              </p>
-            </mat-card-content>
-            <mat-card-actions>
-              <button mat-button> <a href="https://dadosgeociencias.ibge.gov.br/portal/apps/sites/#/saude">Ler artigo</a> </button>
+              <button mat-button style="background: transparent;"> <a href="https://dadosgeociencias.ibge.gov.br/portal/apps/sites/#/saude">Ler artigo</a> </button>
               <!-- <button mat-button>SHARE</button> -->
             </mat-card-actions>
           </mat-card>

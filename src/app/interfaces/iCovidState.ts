@@ -9,5 +9,9 @@ export interface ICovidState {
   suspects: number;
   tests: number;
   vaccinated: number;
+  vaccinated_second: number;
+  vaccinated_third: number;
+  vaccinated_single: number;
   cases: number;
+  newCases: number;
 }

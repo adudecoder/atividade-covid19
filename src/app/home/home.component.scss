@@ -32,6 +32,7 @@
 
   .flex-row-chart {
     width: 100%;
+    margin: 2rem 0;
     display: flex;
     align-items: flex-start;
     justify-items: flex-start;
@@ -58,19 +59,36 @@
   .container-article {
     // width: 50%;
     // border: 1px solid black;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 2.5rem 0;
+    text-align: center;
 
     .content {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 5rem 0;
 
       .example-card {
-        max-width: 200px;
+        max-width: 300px;
+        text-align: center;
 
         a {
           text-decoration: none;
           color: #000;
+          text-align: center;
+          background: #7CCCFF;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 1rem;
+          margin: 1rem 0;
+          display: block;
+          transition: all 0.4s linear;
+          border-radius: 14px
+        }
+
+        a:hover {
+          backgorund: #5485a3;
+          color: #FFF;
         }
       }
 
@@ -107,17 +125,15 @@
 }
 
 .footer-bar {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-top: 1rem;
+  margin: 1rem 0;
+  padding: 2rem;
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 0;
 
   img {
-    height: 5rem;
+    height: 3rem
   }
 }
 
@@ -147,3 +163,8 @@
     width: 50%;
   }
 }
+
+// button{
+//   background-color:darkslategray;
+//   color: black;
+// }

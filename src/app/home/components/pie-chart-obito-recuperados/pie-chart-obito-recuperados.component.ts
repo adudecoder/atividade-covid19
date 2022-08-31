@@ -9,77 +9,71 @@ import { ICovidState } from 'src/app/interfaces/iCovidState';
   styleUrls: ['./pie-chart-obito-recuperados.component.scss'],
 })
 export class PieChartObitoRecuperadosComponent implements OnInit {
-  @Input() dataCovid: Array<ICovidState> = [];
-  private chart: echarts.EChartsType | undefined;
-  public dataChart = [{name: "Obitos", value: 0}, {name: "Recuperados", value: 0}, {name: "Vacinados", value: 0}];
-
-  constructor() {}
+  @Input() data: Array<ICovidState> = [];
+  public dataChart = [{name: "1ª Dose", value: 0}, {name: "2ª Dose", value: 0}, {name: "3ª Dose", value: 0}, {name: "Dose Única", value: 0}];
 
   ngOnInit(): void {
-    this.chartPie();
-    $(window).on('resize', () => {
-      if (this.chart != null && this.chart != undefined) {
-        this.chart.resize();
-      }
-    });
+    this.createChart();
   }
 
-  public chartPie(): void {
+  public createChart() {
     this.updateDataChart();
 
-    var chartDom = document.getElementById('pieChart')!;
-    this.chart = echarts.init(chartDom);
-    var option: echarts.EChartsOption;
+    var chartDom = document.getElementById('chart')!;
+    var myChart = echarts.init(chartDom);
+    var option;
 
     option = {
-      title: {
-        text: 'Obitos, Vacinados e Recuperados(Total)',
-        left: 'center',
-      },
+      color: ['#5470c6', '#3ba272', '#fac858', '#fc8452'],
       tooltip: {
         trigger: 'item',
       },
       legend: {
-        orient: 'vertical',
-        left: 'bottom',
+        top: '5%',
+        left: 'center',
       },
       series: [
         {
-          name: 'Grafic',
+          name: 'Total',
           type: 'pie',
-          radius: '50%',
-          data: this.dataChart,
+          radius: ['40%', '70%'],
+          avoidLabelOverlap: false,
+          itemStyle: {
+            borderRadius: 10,
+            borderColor: '#fff',
+            borderWidth: 2,
+          },
+          label: {
+            show: false,
+            position: 'center',
+          },
           emphasis: {
-            itemStyle: {
-              shadowBlur: 10,
-              shadowOffsetX: 0,
-              shadowColor: 'rgba(0, 0, 0, 0.5)'
+            label: {
+              show: true,
+              fontSize: '40',
+              fontWeight: 'bold',
             },
           },
+          labelLine: {
+            show: false,
+          },
+          data: this.dataChart,
         },
       ],
     };
 
-    this.chart.setOption(option);
+    option && myChart.setOption(option);
   }
 
-  //atualização dos dados utilizados
   public updateDataChart(): void {
-    // this.dataChart.map((item, index)=>this.dataChart[index].value = 0) //zera todos os valores do dataChart
-    // inseri os valores determinantemente pelo estado
-    this.dataChart[0].value = this.dataCovid[this.dataCovid.length - 1].deaths
-    this.dataChart[1].value = this.dataCovid[this.dataCovid.length - 1].recovered
-    this.dataChart[2].value = this.dataCovid[this.dataCovid.length - 1].vaccinated
-    console.log(this.dataCovid);
-  }
+    // this.dataChart[0].value = this.data[this.data.length - 1].cases
+    // this.dataChart[1].value = this.data[this.data.length - 1].recovered
+    this.dataChart[0].value = this.data[this.data.length - 1].vaccinated
+    this.dataChart[1].value = this.data[this.data.length - 1].vaccinated_second
+    this.dataChart[2].value = this.data[this.data.length - 1].vaccinated_third
+    this.dataChart[3].value = this.data[this.data.length - 1].vaccinated_single
+    // this.dataChart[6].value = this.data[this.data.length - 1].deaths
 
-  public updateChartValues(): void {
-    this.chart!.setOption({
-      series: [
-        {
-          data: this.dataChart,
-        },
-      ],
-    });
+
   }
 }

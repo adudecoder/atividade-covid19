@@ -67,7 +67,7 @@ export class MapComponent implements OnInit {
     echarts.registerMap('BR', brazilJson);
     option = {
       title: {
-        text: 'Casos de covid 19 no Brasil',
+        text: 'Casos da Covid-19 no Brasil',
         subtext: 'Fonte: WCota/covid19br',
         sublink: 'https://github.com/wcota/covid19br',
         left: 'left',
@@ -78,7 +78,7 @@ export class MapComponent implements OnInit {
         min: 0,
         max: 6000000,
         inRange: {
-          color: ['Khaki', 'Purple', 'Black'],
+          color: ['cyan', 'darkblue', 'darkslateblue'],
         },
         text: ['Alto', 'Baixo'],
         calculable: true,

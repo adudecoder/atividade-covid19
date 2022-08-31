@@ -51,8 +51,6 @@ h5{
 }
 
 .table-container {
-  max-height: 200px;
-  overflow: auto;
   table {
     width: 100%;
     text-align: center;
@@ -61,6 +59,21 @@ h5{
       left: 0;
     }
   }
+
+  table th {
+    font-weight: 600;
+    font-size: 16px
+  }
+
+  table td {
+    cursor: pointer
+  }
+
+  tbody tr:nth-child(2n + 1) {
+    background: #CCC;
+    color: #000
+  }
+
   thead {
     position: sticky;
     top: 0;
@@ -74,8 +87,7 @@ h5{
   tbody {
     z-index: inherit;
     tr, td {
-      padding: .5rem;
-      background-color: white;
+      padding: .6rem;
     }
   }
 }

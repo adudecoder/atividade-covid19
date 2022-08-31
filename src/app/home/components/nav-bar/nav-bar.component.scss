@@ -19,19 +19,24 @@ $light-bg: #111;
   width: 300px;
 
   .modal-content {
+    
     width: 300px;
 
     .btn-close:hover {
       background-color: $red;
+      transition: all 0.4s linear;
+    }
+
+    .list-group-item {
+      transition: all 0.4s linear;
     }
 
     .list-group-item a {
       color: black;
+      font-size: 17px
     }
 
-    .list-group-item a:hover {
-      color: $white;
-    }
+    
 
     .list-group-item:hover {
       background-color: $light-white;
@@ -41,4 +46,13 @@ $light-bg: #111;
       background-color: $red;
     }
   }
+}
+
+.modal_edit {
+  padding: 0
+}
+
+.modal_edit ul li {
+  transition: all 0.4s linear;
+  cursor: pointer
 }

@@ -19,11 +19,14 @@ export class HomeComponent implements OnInit {
   public datas: Array<string> = [];
   public selectDate?: string;
 
+  public abrir: boolean = false;
+
   constructor(private covidStatesService: CovidStatesService, private covidCitiesService: CovidCitiesService) {}
 
   ngOnInit(): void {
     this.setDataStates();
     this.setDataCities();
+    setInterval(() => this.abrir = true, 5000);
     setTimeout(() => {
       this.ChargeMap = true;
     }, 2000);
@@ -37,16 +40,20 @@ export class HomeComponent implements OnInit {
         const items = e.split(',');
         this.dataCovidStates.push({
           date: items[1],
-          country: items[2],
-          state: items[3],
-          city: items[4],
-          newDeaths: items[5],
-          deaths: items[6],
-          recovered: items[14],
-          suspects: items[15],
-          tests: items[16],
-          vaccinated: items[18],
-          cases: items[8],
+            country: items[2],
+            state: items[3],
+            city: items[4],
+            newDeaths: items[5],
+            deaths: items[6],
+            recovered: items[14],
+            suspects: items[15],
+            tests: items[16],
+            vaccinated: items[18],
+            vaccinated_second: items[20],
+            vaccinated_third: items[24],
+            vaccinated_single: items[22],
+            cases: items[8],
+            newCases: items[7],
         });
       });
       this.getDatesCovid();
@@ -95,4 +102,6 @@ export class HomeComponent implements OnInit {
     });
     setTimeout(()=>this.ChargeMap = true, 2000)
   }
+
+
 }
