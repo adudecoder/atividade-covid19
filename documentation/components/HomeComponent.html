@@ -1,0 +1,1217 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>covid-facepe documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">covid-facepe documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  HomeComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/home/home.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-home</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./home.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./home.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#abrir" >abrir</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ChargeMap" >ChargeMap</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dataCovidCities" >dataCovidCities</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dataCovidStates" >dataCovidStates</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dataCovidStatesPerDate" >dataCovidStatesPerDate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#datas" >datas</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#selectDate" >selectDate</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#filterDateCovid" >filterDateCovid</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getDatesCovid" >getDatesCovid</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setDataCities" >setDataCities</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setDataStates" >setDataStates</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(covidStatesService: <a href="../injectables/CovidStatesService.html" target="_self">CovidStatesService</a>, covidCitiesService: <a href="../injectables/CovidCitiesService.html" target="_self">CovidCitiesService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/home/home.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>covidStatesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CovidStatesService.html" target="_self" >CovidStatesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>covidCitiesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CovidCitiesService.html" target="_self" >CovidCitiesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterDateCovid"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>filterDateCovid</b></span>
+                        <a href="#filterDateCovid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>filterDateCovid(date: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="95"
+                            class="link-to-prism">src/app/home/home.component.ts:95</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>date</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDatesCovid"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getDatesCovid</b></span>
+                        <a href="#getDatesCovid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDatesCovid()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/home/home.component.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/home/home.component.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setDataCities"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>setDataCities</b></span>
+                        <a href="#setDataCities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setDataCities()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/home/home.component.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setDataStates"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>setDataStates</b></span>
+                        <a href="#setDataStates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setDataStates()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/home/home.component.ts:36</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="abrir"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>abrir</b></span>
+                        <a href="#abrir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/home/home.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ChargeMap"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>ChargeMap</b></span>
+                        <a href="#ChargeMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/home/home.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dataCovidCities"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dataCovidCities</b></span>
+                        <a href="#dataCovidCities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ICovidCities.html" target="_self" >Array&lt;ICovidCities&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/home/home.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dataCovidStates"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dataCovidStates</b></span>
+                        <a href="#dataCovidStates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ICovidState.html" target="_self" >Array&lt;ICovidState&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/home/home.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dataCovidStatesPerDate"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dataCovidStatesPerDate</b></span>
+                        <a href="#dataCovidStatesPerDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ICovidState.html" target="_self" >Array&lt;ICovidState&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/home/home.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="datas"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>datas</b></span>
+                        <a href="#datas"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;string&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/home/home.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectDate"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>selectDate</b></span>
+                        <a href="#selectDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/home/home.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ICovidCities } from &#x27;src/app/interfaces/iCovidCities&#x27;;
+import { ICovidState } from &#x27;src/app/interfaces/iCovidState&#x27;;
+import { CovidCitiesService } from &#x27;src/app/services/covidCities/covid-cities.service&#x27;;
+import { CovidStatesService } from &#x27;src/app/services/covidStates/covidStates.service&#x27;;
+
+@Component({
+  selector: &#x27;app-home&#x27;,
+  templateUrl: &#x27;./home.component.html&#x27;,
+  styleUrls: [&#x27;./home.component.scss&#x27;],
+})
+export class HomeComponent implements OnInit {
+
+  public dataCovidStates: Array&lt;ICovidState&gt; &#x3D; [];
+  public dataCovidStatesPerDate: Array&lt;ICovidState&gt; &#x3D; [];
+  public dataCovidCities: Array&lt;ICovidCities&gt; &#x3D; [];
+
+  public ChargeMap: boolean &#x3D; false;
+  public datas: Array&lt;string&gt; &#x3D; [];
+  public selectDate?: string;
+
+  public abrir: boolean &#x3D; false;
+
+  constructor(private covidStatesService: CovidStatesService, private covidCitiesService: CovidCitiesService) {}
+
+  ngOnInit(): void {
+    this.setDataStates();
+    this.setDataCities();
+    setInterval(() &#x3D;&gt; this.abrir &#x3D; true, 5000);
+    setTimeout(() &#x3D;&gt; {
+      this.ChargeMap &#x3D; true;
+    }, 2000);
+  }
+
+  //estados
+  public setDataStates(): void {
+    this.covidStatesService.getData().subscribe((data: any) &#x3D;&gt; {
+      const list &#x3D; data.split(&#x27;\n&#x27;);
+      list.forEach((e: any) &#x3D;&gt; {
+        const items &#x3D; e.split(&#x27;,&#x27;);
+        this.dataCovidStates.push({
+          date: items[1],
+            country: items[2],
+            state: items[3],
+            city: items[4],
+            newDeaths: items[5],
+            deaths: items[6],
+            recovered: items[14],
+            suspects: items[15],
+            tests: items[16],
+            vaccinated: items[18],
+            vaccinated_second: items[20],
+            vaccinated_third: items[24],
+            vaccinated_single: items[22],
+            cases: items[8],
+            newCases: items[7],
+        });
+      });
+      this.getDatesCovid();
+    });
+  }
+
+  //cidade
+  public setDataCities(): void{
+    this.covidCitiesService.getData().subscribe((data: any)&#x3D;&gt; {
+      const list &#x3D; data.split(&#x27;\n&#x27;);
+      list.forEach((e: any)&#x3D;&gt; {
+        const items &#x3D; e.split(&#x27;,&#x27;);
+        this.dataCovidCities.push({
+          uf: items[1],
+          name: items[2],
+          deaths: items[4],
+          new_deaths: items[12],
+          total_cases: items[5],
+          new_cases: items[11],
+          date: items[10]
+        })
+        this.dataCovidCities.sort((a,b)&#x3D;&gt;a.uf.localeCompare(b.uf))
+      })
+      this.dataCovidCities.splice(0,1)
+    })
+  }
+
+  public getDatesCovid(): void {
+    this.dataCovidStates.map((item) &#x3D;&gt; {
+      this.datas.push(item.date);
+    });
+    this.datas &#x3D; [...new Set(this.datas)];
+    this.datas.sort((a, b) &#x3D;&gt; b.localeCompare(a));
+    this.datas.splice(0, 1);
+    this.selectDate &#x3D; this.datas[0];
+    this.filterDateCovid(this.selectDate);
+  }
+
+  public filterDateCovid(date: any) {
+    this.ChargeMap &#x3D; false;
+    this.dataCovidStatesPerDate &#x3D; [];
+    this.dataCovidStates.map((item) &#x3D;&gt; {
+      if (item.date &#x3D;&#x3D;&#x3D; date) {
+        this.dataCovidStatesPerDate.push(item);
+      }
+    });
+    setTimeout(()&#x3D;&gt;this.ChargeMap &#x3D; true, 2000)
+  }
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-nav-bar&gt;&lt;/app-nav-bar&gt;
+
+&lt;div class&#x3D;&quot;container-main&quot;&gt;
+
+  &lt;ng-template [ngIf]&#x3D;&quot;!ChargeMap&quot;&gt;
+    &lt;div class&#x3D;&quot;loading&quot;&gt;
+      &lt;img
+        src&#x3D;&quot;../../../assets/imgs/loading.png&quot;
+        alt&#x3D;&quot;Carregando data...&quot;
+      /&gt;
+      &lt;br /&gt; &lt;br /&gt;
+      &lt;p&gt;Carregando dados...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/ng-template&gt;
+  &lt;ng-template [ngIf]&#x3D;&quot;ChargeMap&quot;&gt;
+    &lt;div class&#x3D;&quot;flex-row-chart&quot;&gt;
+      &lt;app-map [dataCovid]&#x3D;&quot;dataCovidStatesPerDate&quot;&gt;&lt;/app-map&gt;
+      &lt;app-pie-chart-graphic [data]&#x3D;&quot;dataCovidStatesPerDate&quot;&gt;&lt;/app-pie-chart-graphic&gt;
+    &lt;/div&gt;
+    &lt;app-cards&gt;&lt;/app-cards&gt;
+      &lt;app-list-states [dataCovid]&#x3D;&quot;dataCovidStatesPerDate&quot;&gt;&lt;/app-list-states&gt;
+      &lt;div class&#x3D;&quot;container-article&quot;&gt;
+        &lt;h4&gt;Notícias&lt;/h4&gt;
+        &lt;div class&#x3D;&quot;content&quot;&gt;
+          &lt;mat-card class&#x3D;&quot;example-card&quot;&gt;
+            &lt;mat-card-header&gt;
+              &lt;mat-card-title style&#x3D;&quot;color: #1E90FF;&quot;&gt;Recursos físicos e humanos da rede assistencial de saúde&lt;/mat-card-title&gt;
+              &lt;mat-card-subtitle style&#x3D;&quot;color: #A9A9A9;&quot;&gt;Fonte: IBGE&lt;/mat-card-subtitle&gt;
+            &lt;/mat-card-header&gt;
+            &lt;img mat-card-image src&#x3D;&quot;https://www.melhoresdestinos.com.br/wp-content/uploads/2021/03/covid-quarentena-estados-brasil-capa-01-820x430.jpg&quot; target&#x3D;&quot;_blank&quot; alt&#x3D;&quot;imagem do mapa do Brasil&quot;&gt;
+            &lt;mat-card-content&gt;
+              &lt;p&gt;
+                Distribuição de recursos físicos e humanos da rede assistencial de saúde, conforme o CNES, em dezembro de 2019. As informações estão agregadas por município, região de saúde ou UF e associadas ao número de casos confirmados de COVID-19.
+              &lt;/p&gt;
+            &lt;/mat-card-content&gt;
+            &lt;mat-card-actions&gt;
+              &lt;button mat-button style&#x3D;&quot;background: transparent;&quot;&gt; &lt;a href&#x3D;&quot;https://dadosgeociencias.ibge.gov.br/portal/apps/sites/#/saude&quot; target&#x3D;&quot;_blank&quot;&gt;Ler artigo&lt;/a&gt; &lt;/button&gt;
+            &lt;/mat-card-actions&gt;
+          &lt;/mat-card&gt;
+
+          &lt;mat-card class&#x3D;&quot;example-card&quot;&gt;
+            &lt;mat-card-header&gt;
+              &lt;mat-card-title style&#x3D;&quot;color: #1E90FF;&quot;&gt;Como se proteger da Covid-19&lt;/mat-card-title&gt;
+              &lt;mat-card-subtitle style&#x3D;&quot;color: #A9A9A9;&quot;&gt;Fonte: GOV.BR Ministério da Saúde&lt;/mat-card-subtitle&gt;
+            &lt;/mat-card-header&gt;
+            &lt;img mat-card-image src&#x3D;&quot;https://s2.glbimg.com/LyR8sVGbfybKabaycA4LW4sxeSc&#x3D;/0x0:1440x900/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/Y/Y/8leH3NQWOsBO8MuYEFpg/dicas-para-pais-e-maes-sobre-coronavirus.jpg&quot; alt&#x3D;&quot;Como se previnir da Covid-19&quot;&gt;
+            &lt;mat-card-content&gt;
+              &lt;p&gt;
+                Diante da emergência ocasionada pelo coronavírus SARS-CoV-2, o reconhecimento da pandemia pela OMS e a declaração de Emergência de Saúde Pública de Importância Nacional (ESPIN), o Ministério da Saúde tem estabelecido sistematicamente medidas para resposta e enfrentamento da covid-19.
+              &lt;/p&gt;
+            &lt;/mat-card-content&gt;
+            &lt;mat-card-actions&gt;
+              &lt;button mat-button style&#x3D;&quot;background: transparent;&quot;&gt; &lt;a href&#x3D;&quot;https://www.gov.br/saude/pt-br/coronavirus/como-se-proteger&quot; target&#x3D;&quot;_blank&quot;&gt;Ler artigo&lt;/a&gt; &lt;/button&gt;
+            &lt;/mat-card-actions&gt;
+          &lt;/mat-card&gt;
+
+          &lt;mat-card class&#x3D;&quot;example-card&quot;&gt;
+            &lt;mat-card-header&gt;
+              &lt;mat-card-title style&#x3D;&quot;color: #1E90FF;&quot;&gt;Recursos físicos e humanos da rede assistencial de saúde&lt;/mat-card-title&gt;
+              &lt;mat-card-subtitle style&#x3D;&quot;color: #A9A9A9;&quot;&gt;Fonte: IBGE&lt;/mat-card-subtitle&gt;
+            &lt;/mat-card-header&gt;
+            &lt;img mat-card-image src&#x3D;&quot;https://www.melhoresdestinos.com.br/wp-content/uploads/2021/03/covid-quarentena-estados-brasil-capa-01-820x430.jpg&quot; alt&#x3D;&quot;imagem do mapa do Brasil&quot;&gt;
+            &lt;mat-card-content&gt;
+              &lt;p&gt;
+                Distribuição de recursos físicos e humanos da rede assistencial de saúde, conforme o CNES, em dezembro de 2019. As informações estão agregadas por município, região de saúde ou UF e associadas ao número de casos confirmados de COVID-19.
+              &lt;/p&gt;
+            &lt;/mat-card-content&gt;
+            &lt;mat-card-actions&gt;
+              &lt;button mat-button style&#x3D;&quot;background: transparent;&quot;&gt; &lt;a href&#x3D;&quot;https://dadosgeociencias.ibge.gov.br/portal/apps/sites/#/saude&quot;&gt;Ler artigo&lt;/a&gt; &lt;/button&gt;
+            &lt;/mat-card-actions&gt;
+          &lt;/mat-card&gt;
+
+        &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/ng-template&gt;
+
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;footer-bar mat-elevation-z8&quot;&gt;
+  &lt;a href&#x3D;&quot;https://www.pitang.com&quot;&gt; &lt;img src&#x3D;&quot;https://www.pitang.com/image/layout_set_logo?img_id&#x3D;64051&amp;t&#x3D;1648734708816&quot; alt&#x3D;&quot;&quot;&gt; &lt;/a&gt;
+
+  &lt;a href&#x3D;&quot;https://www.educamaisbrasil.com.br/escolas/escola-tecnica-estadual-jose-joaquim-da-silva-filho&quot;&gt; &lt;img src&#x3D;&quot;https://raw.githubusercontent.com/ViniciusSoares-Developer/product-buy-angular/main/src/assets/logoETE.png&quot; alt&#x3D;&quot;&quot;&gt; &lt;/a&gt;
+
+  &lt;a href&#x3D;&quot;https://www.facepe.br&quot;&gt; &lt;img src&#x3D;&quot;https://agil.facepe.br/imagens/logo_facepe.png&quot; alt&#x3D;&quot;&quot;&gt; &lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./home.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import url(&#x27;https://fonts.googleapis.com/css2?family&#x3D;Roboto&amp;display&#x3D;swap&#x27;);
+
+.header-bar {
+  font-family: &#x27;Roboto&#x27;, sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 0 1rem 0 black;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  color: black;
+
+  // select {
+  //   width: 100%;
+  //   padding: 0.3rem;
+  //   border-radius: 1rem;
+  //   border: .1rem solid blue;
+  //   outline: none;
+  //   text-align: center;
+  //   font-size: 1rem;
+  // }
+
+  // section {
+  //   width: 50%;
+  // }
+}
+
+.container-main {
+  // display: flex;
+  // justify-content: space-evenly;
+
+  .flex-row-chart {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+    img {
+      width: 10%;
+      height: auto;
+      animation: covid 2s infinite;
+    }
+  }
+
+
+  .container-article {
+    // width: 50%;
+    // border: 1px solid black;
+    margin: 2.5rem 0;
+    text-align: center;
+
+    .content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 5rem 0;
+
+      .example-card {
+        max-width: 300px;
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          color: #000;
+          text-align: center;
+          background: #7CCCFF;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 1rem;
+          margin: 1rem 0;
+          display: block;
+          transition: all 0.4s linear;
+          border-radius: 14px
+        }
+
+        a:hover {
+          backgorund: #5485a3;
+          color: #FFF;
+        }
+      }
+
+      .example-header-image {
+        background-image: url(&#x27;https://material.angular.io/assets/img/examples/shiba1.jpg&#x27;);
+        background-size: cover;
+      }
+
+      // .text-article {
+
+      //   h4 {
+      //     text-align: center;
+      //     padding-bottom: 25px;
+      //     color: #00BFFF;
+      //     letter-spacing: .2rem;
+      //     word-spacing: 15px;
+      //     font-family: sans-serif;
+      //   }
+
+      //   p {
+      //     text-align: center;
+      //     padding: 0px 10px 0px 10px;
+      //   }
+      // }
+
+      // img {
+      //   width: 50%;
+      //   padding-left: 100px;
+      //   padding-bottom: 50px;
+      //   padding-top: 15px;
+      // }
+    }
+  }
+}
+
+.footer-bar {
+  margin: 1rem 0;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  img {
+    height: 3rem
+  }
+}
+
+
+@keyframes covid {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  app-map,
+  app-pie-chart-obito-recuperados {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  app-map,
+  app-pie-chart-obito-recuperados {
+    width: 50%;
+  }
+}
+
+// button{
+//   background-color:darkslategray;
+//   color: black;
+// }
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-nav-bar></app-nav-bar><div class="container-main">  <ng-template [ngIf]="!ChargeMap">    <div class="loading">      <img        src="../../../assets/imgs/loading.png"        alt="Carregando data..."      />      <br /> <br />      <p>Carregando dados...</p>    </div>  </ng-template>  <ng-template [ngIf]="ChargeMap">    <div class="flex-row-chart">      <app-map [dataCovid]="dataCovidStatesPerDate"></app-map>      <app-pie-chart-graphic [data]="dataCovidStatesPerDate"></app-pie-chart-graphic>    </div>    <app-cards></app-cards>      <app-list-states [dataCovid]="dataCovidStatesPerDate"></app-list-states>      <div class="container-article">        <h4>Notícias</h4>        <div class="content">          <mat-card class="example-card">            <mat-card-header>              <mat-card-title style="color: #1E90FF;">Recursos físicos e humanos da rede assistencial de saúde</mat-card-title>              <mat-card-subtitle style="color: #A9A9A9;">Fonte: IBGE</mat-card-subtitle>            </mat-card-header>            <img mat-card-image src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/03/covid-quarentena-estados-brasil-capa-01-820x430.jpg" target="_blank" alt="imagem do mapa do Brasil">            <mat-card-content>              <p>                Distribuição de recursos físicos e humanos da rede assistencial de saúde, conforme o CNES, em dezembro de 2019. As informações estão agregadas por município, região de saúde ou UF e associadas ao número de casos confirmados de COVID-19.              </p>            </mat-card-content>            <mat-card-actions>              <button mat-button style="background: transparent;"> <a href="https://dadosgeociencias.ibge.gov.br/portal/apps/sites/#/saude" target="_blank">Ler artigo</a> </button>            </mat-card-actions>          </mat-card>          <mat-card class="example-card">            <mat-card-header>              <mat-card-title style="color: #1E90FF;">Como se proteger da Covid-19</mat-card-title>              <mat-card-subtitle style="color: #A9A9A9;">Fonte: GOV.BR Ministério da Saúde</mat-card-subtitle>            </mat-card-header>            <img mat-card-image src="https://s2.glbimg.com/LyR8sVGbfybKabaycA4LW4sxeSc=/0x0:1440x900/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/Y/Y/8leH3NQWOsBO8MuYEFpg/dicas-para-pais-e-maes-sobre-coronavirus.jpg" alt="Como se previnir da Covid-19">            <mat-card-content>              <p>                Diante da emergência ocasionada pelo coronavírus SARS-CoV-2, o reconhecimento da pandemia pela OMS e a declaração de Emergência de Saúde Pública de Importância Nacional (ESPIN), o Ministério da Saúde tem estabelecido sistematicamente medidas para resposta e enfrentamento da covid-19.              </p>            </mat-card-content>            <mat-card-actions>              <button mat-button style="background: transparent;"> <a href="https://www.gov.br/saude/pt-br/coronavirus/como-se-proteger" target="_blank">Ler artigo</a> </button>            </mat-card-actions>          </mat-card>          <mat-card class="example-card">            <mat-card-header>              <mat-card-title style="color: #1E90FF;">Recursos físicos e humanos da rede assistencial de saúde</mat-card-title>              <mat-card-subtitle style="color: #A9A9A9;">Fonte: IBGE</mat-card-subtitle>            </mat-card-header>            <img mat-card-image src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/03/covid-quarentena-estados-brasil-capa-01-820x430.jpg" alt="imagem do mapa do Brasil">            <mat-card-content>              <p>                Distribuição de recursos físicos e humanos da rede assistencial de saúde, conforme o CNES, em dezembro de 2019. As informações estão agregadas por município, região de saúde ou UF e associadas ao número de casos confirmados de COVID-19.              </p>            </mat-card-content>            <mat-card-actions>              <button mat-button style="background: transparent;"> <a href="https://dadosgeociencias.ibge.gov.br/portal/apps/sites/#/saude">Ler artigo</a> </button>            </mat-card-actions>          </mat-card>        </div>      </div>  </ng-template></div><div class="footer-bar mat-elevation-z8">  <a href="https://www.pitang.com"> <img src="https://www.pitang.com/image/layout_set_logo?img_id=64051&t=1648734708816" alt=""> </a>  <a href="https://www.educamaisbrasil.com.br/escolas/escola-tecnica-estadual-jose-joaquim-da-silva-filho"> <img src="https://raw.githubusercontent.com/ViniciusSoares-Developer/product-buy-angular/main/src/assets/logoETE.png" alt=""> </a>  <a href="https://www.facepe.br"> <img src="https://agil.facepe.br/imagens/logo_facepe.png" alt=""> </a></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CardsComponent', 'selector': 'app-cards'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ListStatesComponent', 'selector': 'app-list-states'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'PieChartGraphicComponent', 'selector': 'app-pie-chart-graphic'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HomeComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HomeComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

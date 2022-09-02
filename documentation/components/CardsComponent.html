@@ -1,0 +1,986 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>covid-facepe documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">covid-facepe documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  CardsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/home/components/cards/cards.component.ts</code>
+</p>
+
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-cards</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./cards.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./cards.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#abrir" >abrir</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#casos" >casos</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cities" >cities</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dateSelectCities" >dateSelectCities</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#obitos" >obitos</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#recuperados" >recuperados</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#states" >states</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#vac_tot" >vac_tot</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getDataCities" >getDataCities</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getDataStates" >getDataStates</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getPerDate" >getPerDate</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(citiesService: <a href="../injectables/CovidCitiesService.html" target="_self">CovidCitiesService</a>, statesService: <a href="../injectables/CovidStatesService.html" target="_self">CovidStatesService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/home/components/cards/cards.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>citiesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CovidCitiesService.html" target="_self" >CovidCitiesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>statesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CovidStatesService.html" target="_self" >CovidStatesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDataCities"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getDataCities</b></span>
+                        <a href="#getDataCities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDataCities()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/app/home/components/cards/cards.component.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDataStates"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getDataStates</b></span>
+                        <a href="#getDataStates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDataStates()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/home/components/cards/cards.component.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPerDate"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getPerDate</b></span>
+                        <a href="#getPerDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPerDate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="117"
+                            class="link-to-prism">src/app/home/components/cards/cards.component.ts:117</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">src/app/home/components/cards/cards.component.ts:33</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="abrir"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>abrir</b></span>
+                        <a href="#abrir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/home/components/cards/cards.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="casos"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>casos</b></span>
+                        <a href="#casos"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/home/components/cards/cards.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cities"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>cities</b></span>
+                        <a href="#cities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ICovidCities.html" target="_self" >Array&lt;ICovidCities&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/home/components/cards/cards.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dateSelectCities"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dateSelectCities</b></span>
+                        <a href="#dateSelectCities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ICovidState.html" target="_self" >Array&lt;ICovidState&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/home/components/cards/cards.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="obitos"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>obitos</b></span>
+                        <a href="#obitos"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/home/components/cards/cards.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recuperados"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>recuperados</b></span>
+                        <a href="#recuperados"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/home/components/cards/cards.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="states"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>states</b></span>
+                        <a href="#states"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ICovidState.html" target="_self" >Array&lt;ICovidState&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/home/components/cards/cards.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="vac_tot"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>vac_tot</b></span>
+                        <a href="#vac_tot"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/home/components/cards/cards.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+//Interfaces
+import { ICovidCities } from &#x27;src/app/interfaces/iCovidCities&#x27;;
+import { ICovidState } from &#x27;src/app/interfaces/iCovidState&#x27;;
+
+//Services
+import { CovidStatesService } from &#x27;src/app/services/covidStates/covidStates.service&#x27;;
+import { CovidCitiesService } from &#x27;src/app/services/covidCities/covid-cities.service&#x27;;
+
+@Component({
+  selector: &#x27;app-cards&#x27;,
+  templateUrl: &#x27;./cards.component.html&#x27;,
+  styleUrls: [&#x27;./cards.component.scss&#x27;]
+})
+export class CardsComponent {
+  public states: Array&lt;ICovidState&gt; &#x3D; [];
+  public cities: Array&lt;ICovidCities&gt; &#x3D; [];
+
+  public dateSelectCities: Array&lt;ICovidState&gt; &#x3D; [];
+  public abrir: boolean &#x3D; false;
+
+  public vac_tot?: any;
+  public casos?: any;
+  public obitos?: any;
+  public recuperados?: any;
+
+  constructor(
+    private citiesService: CovidCitiesService,
+    private statesService: CovidStatesService
+  ) {}
+
+
+  ngOnInit(): void {
+    this.getDataStates();
+    this.getDataCities();
+    setInterval(() &#x3D;&gt; this.abrir &#x3D; true, 5000);
+
+  }
+
+  private getDataCities(): void {
+    this.citiesService.getData().subscribe((data) &#x3D;&gt; {
+      const list &#x3D; data.split(&#x27;\n&#x27;);
+      list.forEach((e: any) &#x3D;&gt; {
+        const item &#x3D; e.split(&#x27;,&#x27;);
+        this.cities.push({
+          uf: item[1],
+          name: item[2],
+          deaths: item[4],
+          new_deaths: item[12],
+          total_cases: item[5],
+          new_cases: item[11],
+          date: item[10],
+        });
+        this.cities.sort((a, b) &#x3D;&gt; a.uf.localeCompare(b.uf));
+      });
+      this.cities.splice(0, 1);
+    });
+  }
+
+  private getDataStates(): void {
+    this.statesService.getData().subscribe((data) &#x3D;&gt; {
+      const list &#x3D; data.split(&#x27;\n&#x27;);
+      list.forEach((e: any) &#x3D;&gt; {
+        const item &#x3D; e.split(&#x27;,&#x27;);
+        var hoje &#x3D; new Date();
+        var ontem &#x3D; new Date(hoje.getTime());
+        ontem.setDate(hoje.getDate() - 1);
+        var dd: any &#x3D; ontem.getDate();
+        var mm: any &#x3D; ontem.getMonth() + 1;
+        var yyyy &#x3D; ontem.getFullYear();
+        if (dd &lt; 10) {
+          dd &#x3D; &#x27;0&#x27; + dd;
+        }
+        if (mm &lt; 10) {
+          mm &#x3D; &#x27;0&#x27; + mm;
+        }
+        var data_ok &#x3D; yyyy + &#x27;-&#x27; + mm + &#x27;-&#x27; + dd;
+        if (item[1] &#x3D;&#x3D; data_ok) {
+          this.states.push({
+            date: item[1],
+            country: item[2],
+            state: item[3],
+            city: item[4],
+            newDeaths: item[5],
+            deaths: item[6],
+            recovered: item[14],
+            suspects: item[15],
+            tests: item[16],
+            vaccinated: item[18],
+            vaccinated_second: item[20],
+            vaccinated_third: item[24],
+            vaccinated_single: item[22],
+            cases: item[8],
+            newCases: item[7],
+
+          });
+        }
+      });
+      // this.states.splice(0, 1);
+      this.states.sort((item1, item2) &#x3D;&gt; item2.date.localeCompare(item1.date));
+      // this.states.splice(this.states.length - 1, 1);
+      this.vac_tot &#x3D; Number(this.states[27].vaccinated) + Number(this.states[27].vaccinated_second) + Number(this.states[27].vaccinated_third) + Number(this.states[27].vaccinated_single)
+      this.vac_tot &#x3D; new Intl.NumberFormat(&#x27;pt-BR&#x27;).format(this.vac_tot);
+
+      this.casos &#x3D; this.states[27].cases
+      this.casos &#x3D; new Intl.NumberFormat(&#x27;pt-BR&#x27;).format(this.casos);
+
+      this.obitos &#x3D; this.states[27].deaths
+      this.obitos &#x3D; new Intl.NumberFormat(&#x27;pt-BR&#x27;).format(this.obitos);
+
+      this.recuperados &#x3D; this.states[27].recovered
+      this.recuperados &#x3D; new Intl.NumberFormat(&#x27;pt-BR&#x27;).format(this.recuperados);
+    });
+    this.getPerDate();
+  }
+
+  private getPerDate(): void {
+    this.states.forEach((item) &#x3D;&gt; {
+      if (item.date &#x3D;&#x3D; this.states[1].date) {
+        this.dateSelectCities.push(item);
+        console.log(&#x27;inpput&#x27;);
+      }
+    });
+    this.states.sort((item1, item2) &#x3D;&gt; item2.state.localeCompare(item1.state));
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;div class&#x3D;&quot;row g-3 my-2&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-3&quot;&gt;
+      &lt;div id&#x3D;&quot;card1&quot; class&#x3D;&quot;p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded&quot;&gt;
+        &lt;div&gt;
+          &lt;h3 class&#x3D;&quot;fs-2&quot;&gt;{{casos}}&lt;/h3&gt;
+          &lt;p class&#x3D;&quot;fs-5&quot;&gt;Casos&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;img class&#x3D;&quot;bi bi-virus2 fs-2 primary-text secondary-bg p-3 px-4&quot; src&#x3D;&quot;../../../assets/img/cases.png&quot; alt&#x3D;&quot;casos&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;col-md-3&quot;&gt;
+      &lt;div id&#x3D;&quot;card2&quot; class&#x3D;&quot;p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded&quot;&gt;
+        &lt;div&gt;
+          &lt;h3 class&#x3D;&quot;fs-2&quot;&gt;{{obitos}}&lt;/h3&gt;
+          &lt;p class&#x3D;&quot;fs-5&quot;&gt;Óbitos&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;img class&#x3D;&quot;fs-2 primary-text secondary-bg p-3 py-4 px-4&quot; src&#x3D;&quot;../../../assets/img/deaths.png&quot; alt&#x3D;&quot;obitos&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;col-md-3&quot;&gt;
+      &lt;div id&#x3D;&quot;card3&quot; class&#x3D;&quot;p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded&quot;&gt;
+        &lt;div&gt;
+          &lt;h3 class&#x3D;&quot;fs-2&quot;&gt;{{recuperados}}&lt;/h3&gt;
+          &lt;p class&#x3D;&quot;fs-5&quot;&gt;Recuperados&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;i class&#x3D;&quot;bi bi-bandaid fs-2 primary-text secondary-bg p-3 px-4&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;col-md-3&quot;&gt;
+      &lt;div id&#x3D;&quot;card4&quot; class&#x3D;&quot;p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded&quot;&gt;
+        &lt;div&gt;
+          &lt;h3 class&#x3D;&quot;fs-2&quot;&gt;{{vac_tot}}&lt;/h3&gt;
+          &lt;p class&#x3D;&quot;fs-5&quot;&gt;Vacinação&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;img class&#x3D;&quot;fs-2 primary-text secondary-bg p-3 py-4 px-4&quot; src&#x3D;&quot;../../../assets/img/vaccinated.png&quot;
+          alt&#x3D;&quot;&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./cards.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">// #card1 {
+//   border: 1px solid #5470c6;
+// }
+
+// #card2 {
+//   border: 1px solid #ee6666;
+// }
+
+// #card3 {
+//   border: 1px solid #3ba272;
+// }
+
+// #card4 {
+//   border: 1px solid #73c0de;
+// }
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container">  <div class="row g-3 my-2">    <div class="col-md-3">      <div id="card1" class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">        <div>          <h3 class="fs-2">{{casos}}</h3>          <p class="fs-5">Casos</p>        </div>        <img class="bi bi-virus2 fs-2 primary-text secondary-bg p-3 px-4" src="../../../assets/img/cases.png" alt="casos">      </div>    </div>    <div class="col-md-3">      <div id="card2" class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">        <div>          <h3 class="fs-2">{{obitos}}</h3>          <p class="fs-5">Óbitos</p>        </div>        <img class="fs-2 primary-text secondary-bg p-3 py-4 px-4" src="../../../assets/img/deaths.png" alt="obitos">      </div>    </div>    <div class="col-md-3">      <div id="card3" class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">        <div>          <h3 class="fs-2">{{recuperados}}</h3>          <p class="fs-5">Recuperados</p>        </div>        <i class="bi bi-bandaid fs-2 primary-text secondary-bg p-3 px-4"></i>      </div>    </div>    <div class="col-md-3">      <div id="card4" class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">        <div>          <h3 class="fs-2">{{vac_tot}}</h3>          <p class="fs-5">Vacinação</p>        </div>        <img class="fs-2 primary-text secondary-bg p-3 py-4 px-4" src="../../../assets/img/vaccinated.png"          alt="">      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CardsComponent', 'selector': 'app-cards'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ListStatesComponent', 'selector': 'app-list-states'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'PieChartGraphicComponent', 'selector': 'app-pie-chart-graphic'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CardsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CardsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

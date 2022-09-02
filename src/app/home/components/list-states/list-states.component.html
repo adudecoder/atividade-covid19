@@ -1,11 +1,8 @@
-
-
 <div class="table-container mat-elevation-z8">
     <table>
       <thead class="mat-elevation-z8">
         <tr>
           <th class="sticky" scope="col">Estados</th>
-          <!-- <th scope="col">Novos Obitos</th> -->
           <th scope="col">Óbitos</th>
           <th scope="col">Vacinados</th>
           <th scope="col">Recuperados</th>
@@ -14,7 +11,6 @@
       <tbody>
         <tr *ngFor="let data of dataStates">
           <td class="sticky">{{ data.state }}</td>
-          <!-- <td>{{ data.new_deaths }}</td> -->
           <td>{{ data.deaths }}</td>
           <td>{{ data.vaccinated }}</td>
           <td>{{ data.recovered }}</td>

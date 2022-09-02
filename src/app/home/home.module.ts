@@ -2,33 +2,26 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 //Components
-import { ListCitiesComponent } from './components/list-cities/list-cities.component';
+import { CardsComponent } from './components/cards/cards.component';
 import { ListStatesComponent } from './components/list-states/list-states.component';
 import { MapComponent } from './components/map/map.component';
-import { PieChartObitoRecuperadosComponent } from './components/pie-chart-obito-recuperados/pie-chart-obito-recuperados.component';
-import { ChartComponent } from './components/chart/chart.component';
-
-
-
-
+import { PieChartGraphicComponent } from './components/pie-chart-graphic/pie-chart-graphic.component';
 
 @NgModule({
   declarations: [
-    ListCitiesComponent,
+    CardsComponent,
     ListStatesComponent,
     MapComponent,
-    PieChartObitoRecuperadosComponent,
-    ChartComponent,
-
+    PieChartGraphicComponent
   ],
   imports: [
     CommonModule,
   ],
   exports: [
-    ListCitiesComponent,
+    CardsComponent,
     ListStatesComponent,
     MapComponent,
-    PieChartObitoRecuperadosComponent
+    PieChartGraphicComponent
   ]
 })
 export class HomeModule { }

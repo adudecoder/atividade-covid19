@@ -1,15 +1,3 @@
-<!-- <div class="header-bar">
-  <section>
-    <h4>Covid 19 Brasil</h4>
-  </section>
-  <div class="navBar">
-    <ul>
-      <li> <a href="">Pitang</a> </li>
-      <li> <a href="">ETE José Joaquim</a> </li>
-      <li> <a href="">Facepe</a> </li>
-    </ul>
-  </div>
-</div> -->
 <app-nav-bar></app-nav-bar>
 
 <div class="container-main">
@@ -27,9 +15,9 @@
   <ng-template [ngIf]="ChargeMap">
     <div class="flex-row-chart">
       <app-map [dataCovid]="dataCovidStatesPerDate"></app-map>
-      <app-pie-chart-obito-recuperados [data]="dataCovidStatesPerDate"></app-pie-chart-obito-recuperados>
+      <app-pie-chart-graphic [data]="dataCovidStatesPerDate"></app-pie-chart-graphic>
     </div>
-    <app-list-cities></app-list-cities>
+    <app-cards></app-cards>
       <app-list-states [dataCovid]="dataCovidStatesPerDate"></app-list-states>
       <div class="container-article">
         <h4>Notícias</h4>
@@ -47,7 +35,6 @@
             </mat-card-content>
             <mat-card-actions>
               <button mat-button style="background: transparent;"> <a href="https://dadosgeociencias.ibge.gov.br/portal/apps/sites/#/saude" target="_blank">Ler artigo</a> </button>
-              <!-- <button mat-button>SHARE</button> -->
             </mat-card-actions>
           </mat-card>
 
@@ -64,7 +51,6 @@
             </mat-card-content>
             <mat-card-actions>
               <button mat-button style="background: transparent;"> <a href="https://www.gov.br/saude/pt-br/coronavirus/como-se-proteger" target="_blank">Ler artigo</a> </button>
-              <!-- <button mat-button>SHARE</button> -->
             </mat-card-actions>
           </mat-card>
 
@@ -81,13 +67,11 @@
             </mat-card-content>
             <mat-card-actions>
               <button mat-button style="background: transparent;"> <a href="https://dadosgeociencias.ibge.gov.br/portal/apps/sites/#/saude">Ler artigo</a> </button>
-              <!-- <button mat-button>SHARE</button> -->
             </mat-card-actions>
           </mat-card>
 
         </div>
       </div>
-    <!-- <app-list-cities [dataCovid]="dataCovidCities"></app-list-cities> -->
   </ng-template>
 
 </div>
